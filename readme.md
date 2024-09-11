@@ -26,4 +26,4 @@
     Setelah data diproses di view, hasilnya akan dimasukkan ke template HTML yang akan dirender menjadi halaman web dinamis yang akan ditampilkan kepada pengguna.
    - Response to Client
     Setelah template dirender, respons HTML dikirim kembali ke client untuk ditampilkan di browser.
-![bagan]()
+![bagan](output.png)
