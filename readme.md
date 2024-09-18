@@ -44,3 +44,39 @@
 5. Mengapa model pada django disebut sebagai ORM
    
       Model pada Django disebut sebagai ORM (Object-Relational Mapping) karena Django menggunakan pendekatan ini untuk menghubungkan atau memetakan objek dalam kode Python ke tabel dalam basis data relasional. Dengan ORM, pengembang dapat berinteraksi dengan database menggunakan objek dan metode Python tanpa harus menulis perintah SQL secara langsung.
+
+6. Mengapa kita memerlukan data delivery dalam pengimplementasian sebuah platform?
+
+   Data delivery diperlukan dalam pengimplementasian sebuah platform karena platform modern sering kali melibatkan interaksi antar aplikasi atau antar komponen yang berjalan pada berbagai sistem atau perangkat. Data delivery memastikan data yang dikirimkan atau diterima dapat diproses secara efisien dan konsisten oleh komponen-komponen yang berinteraksi tersebut.
+
+7. Mana yang lebih baik antara XML dan JSON? Mengapa JSON lebih populer dibandingkan XML?
+
+   Antara XML dan JSON, pilihan terbaik tergantung pada kebutuhan spesifik. Namun, secara umum, JSON lebih sering dipilih dalam pengembangan aplikasi modern. Berikut adalah beberapa alasan perbandingan antara keduanya:
+
+   JSON lebih ringkas: JSON menggunakan struktur yang lebih sederhana dan lebih kompak daripada XML. JSON tidak memerlukan penutupan tag seperti XML, sehingga file JSON cenderung lebih kecil.
+Mudah dibaca manusia dan mesin: JSON lebih mudah dibaca oleh manusia karena tidak memerlukan tag penutup, dan lebih mudah diproses oleh mesin (khususnya pada aplikasi berbasis web yang menggunakan JavaScript).
+Integrasi yang lebih baik dengan JavaScript: JSON sangat sesuai dengan bahasa JavaScript, karena JSON pada dasarnya adalah subset dari sintaksis objek JavaScript. Ini membuatnya sangat populer dalam pengembangan web, terutama pada aplikasi yang menggunakan AJAX.
+   Parsing lebih cepat: Parsing JSON umumnya lebih cepat dan lebih efisien dibandingkan XML, karena JSON hanya memiliki satu tipe data (key-value pairs), sementara XML memiliki lebih banyak elemen struktural.
+JSON lebih populer karena lebih ringan, cepat, dan memiliki integrasi yang baik dengan teknologi web modern. XML lebih digunakan dalam situasi yang memerlukan validasi data yang lebih kompleks dan lebih formal, seperti dalam aplikasi enterprise atau ketika menggunakan standar seperti SOAP.
+
+8. Fungsi dari method is_valid() pada form Django dan mengapa kita membutuhkannya?
+
+   Method is_valid() pada form Django berfungsi untuk:
+
+   Memvalidasi data form: Method ini memeriksa apakah data yang dimasukkan ke dalam form sesuai dengan aturan validasi yang ditentukan pada form tersebut (seperti tipe data, batas panjang, format, dll.).
+Mengakses data yang divalidasi: Jika validasi berhasil, Django akan menyimpan data yang telah dibersihkan dalam atribut cleaned_data, yang dapat digunakan untuk keperluan selanjutnya (misalnya untuk menyimpan data ke dalam database).
+   Menangani error: Jika validasi gagal, Django akan menyimpan informasi mengenai error di atribut errors, sehingga kita dapat memberikan umpan balik kepada pengguna.
+Kita membutuhkan method ini untuk memastikan bahwa data yang diterima dari pengguna aman dan sesuai dengan kriteria yang diharapkan sebelum melakukan operasi seperti penyimpanan ke database. Jika tidak, data yang tidak valid atau berbahaya bisa merusak aplikasi atau menyebabkan masalah keamanan.
+
+9. Mengapa kita membutuhkan csrf_token saat membuat form di Django? Apa yang dapat terjadi jika kita tidak menambahkan csrf_token pada form Django? Bagaimana hal tersebut dapat dimanfaatkan oleh penyerang?
+
+   Kita membutuhkan csrf_token saat membuat form di Django untuk mencegah serangan Cross-Site Request Forgery (CSRF). CSRF adalah jenis serangan di mana penyerang mengirimkan permintaan berbahaya atas nama pengguna tanpa sepengetahuan atau persetujuan mereka. Token CSRF bekerja dengan cara memastikan bahwa permintaan yang diterima oleh server berasal dari sumber yang sah, yaitu dari halaman yang benar-benar diakses oleh pengguna. Penyalahgunaan otorisasi: Serangan CSRF dapat dimanfaatkan untuk melakukan tindakan atas nama pengguna yang sudah login, seperti mengirim pesan atau menghapus data penting, karena server menganggap permintaan tersebut berasal dari pengguna yang sah. Dengan adanya csrf_token, server dan aplikasi dapat memverifikasi bahwa setiap permintaan POST, PUT, atau DELETE berasal dari sumber yang valid, yaitu halaman aplikasi yang dikontrol oleh server tersebut, sehingga serangan CSRF dapat dicegah.
+
+10. Penjelasan checklist tugas 3
+   - Membuat input form untuk menambahkan objek model pada app sebelumnya.
+![ss1](Screenshot 2024-09-18 115203.png)
+   - Menambahkan fungsi views
+![ss2](Screenshot 2024-09-18 115213.png)
+   - Membuat routing URL
+![ss3](Screenshot 2024-09-18 115227.png)
+
