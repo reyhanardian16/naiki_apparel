@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\reyha\Documents\naiki-apparel\env
+set VIRTUAL_ENV=C:\Users\reyha\Documents\PBP\naiki-apparel\env
 
 if not defined PROMPT set PROMPT=$P$G
 
