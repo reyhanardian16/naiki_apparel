@@ -80,5 +80,6 @@ Kita membutuhkan method ini untuk memastikan bahwa data yang diterima dari pengg
    - Membuat routing URL
 ![ss3](routing_url.png)
 
-11. 
+11. Postman
+![postman](postman.png)
 
