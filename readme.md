@@ -75,10 +75,15 @@ Kita membutuhkan method ini untuk memastikan bahwa data yang diterima dari pengg
 10. Penjelasan Checklist 3
 
    - Membuat input form untuk menambahkan objek model pada app sebelumnya.
+
 ![create_forms](create_forms.png)
+
    - Menambahkan fungsi views
+
 ![create_show](create_show.png)
+
    - Membuat routing URL
+
 ![routing_url](routing_url.png)
 
 11. Postman
@@ -109,10 +114,15 @@ on_delete=models.CASCADE: Parameter on_delete=models.CASCADE berarti jika penggu
 17. Penjelasan checklist 4
 
 - Implementasi fungsi registrasi, login, dan logout
+
 ![user-login](user-login.png)
+
 - Dummy data di lokal
+
 ![dummy1](dummy1.png)
 ![dummy2](dummy2.png)
+
 - Menghubungkan User dengan Product dan menampilkan username pada user yang sedang logged in serta menampilkan last login menggunakan cookies
+
 ![user-product](user-product.png)
 
