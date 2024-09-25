@@ -13,11 +13,11 @@ from django.core import serializers
 
 @login_required(login_url='/login')
 def show_main(request):
-    products = Product.objects.all()
+    products = Product.objects.filter(user=request.user)
 
     context = {
         'npm' : '2306217185',
-        'name': 'Muhammad Reyhan Ardian',
+        'name': request.user.username,
         'class': 'PBP D',
         'last_login': request.COOKIES['last_login']
     }
@@ -27,7 +27,9 @@ def create_product_entry(request):
     form = ProductForm(request.POST or None)
 
     if form.is_valid() and request.method == "POST":
-        form.save()
+        products = form.save(commit=False)
+        products.user = request.user
+        products.save()
         return redirect('main:show_main')
 
     context = {'form': form}
@@ -81,4 +83,4 @@ def logout_user(request):
     logout(request)
     response = HttpResponseRedirect(reverse('main:login'))
     response.delete_cookie('last_login')
-    return response 
+    return response     
