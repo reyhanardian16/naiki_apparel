@@ -74,9 +74,9 @@ Kita membutuhkan method ini untuk memastikan bahwa data yang diterima dari pengg
 
 10. Penjelasan checklist tugas 3
    - Membuat input form untuk menambahkan objek model pada app sebelumnya.
-![ss1](Screenshot 2024-09-18 115203.png)
+![ss1](create_forms.png)
    - Menambahkan fungsi views
-![ss2](Screenshot 2024-09-18 115213.png)
+![ss2](create_show.png)
    - Membuat routing URL
-![ss3](Screenshot 2024-09-18 115227.png)
+![ss3](routing_url.png)
 
