@@ -1,4 +1,4 @@
-1. Penjelasan Checklist
+1. Penjelasan Checklist 1
    
    - Membuat proyek django baru
        Dengan membuat direktori baru, menginstall dependencies, dan menghubungkan repositori git lokal dengan github
@@ -72,11 +72,13 @@ Kita membutuhkan method ini untuk memastikan bahwa data yang diterima dari pengg
 
    Kita membutuhkan csrf_token saat membuat form di Django untuk mencegah serangan Cross-Site Request Forgery (CSRF). CSRF adalah jenis serangan di mana penyerang mengirimkan permintaan berbahaya atas nama pengguna tanpa sepengetahuan atau persetujuan mereka. Token CSRF bekerja dengan cara memastikan bahwa permintaan yang diterima oleh server berasal dari sumber yang sah, yaitu dari halaman yang benar-benar diakses oleh pengguna. Penyalahgunaan otorisasi: Serangan CSRF dapat dimanfaatkan untuk melakukan tindakan atas nama pengguna yang sudah login, seperti mengirim pesan atau menghapus data penting, karena server menganggap permintaan tersebut berasal dari pengguna yang sah. Dengan adanya csrf_token, server dan aplikasi dapat memverifikasi bahwa setiap permintaan POST, PUT, atau DELETE berasal dari sumber yang valid, yaitu halaman aplikasi yang dikontrol oleh server tersebut, sehingga serangan CSRF dapat dicegah.
 
-10. Penjelasan checklist tugas 3
+10. Penjelasan Checklist 3
    - Membuat input form untuk menambahkan objek model pada app sebelumnya.
 ![ss1](create_forms.png)
    - Menambahkan fungsi views
 ![ss2](create_show.png)
    - Membuat routing URL
 ![ss3](routing_url.png)
+
+11. 
 
