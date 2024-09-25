@@ -1,4 +1,4 @@
-1. Penjelasan Checklist
+1. Penjelasan Checklist 1
    
    - Membuat proyek django baru
        Dengan membuat direktori baru, menginstall dependencies, dan menghubungkan repositori git lokal dengan github
@@ -72,11 +72,57 @@ Kita membutuhkan method ini untuk memastikan bahwa data yang diterima dari pengg
 
    Kita membutuhkan csrf_token saat membuat form di Django untuk mencegah serangan Cross-Site Request Forgery (CSRF). CSRF adalah jenis serangan di mana penyerang mengirimkan permintaan berbahaya atas nama pengguna tanpa sepengetahuan atau persetujuan mereka. Token CSRF bekerja dengan cara memastikan bahwa permintaan yang diterima oleh server berasal dari sumber yang sah, yaitu dari halaman yang benar-benar diakses oleh pengguna. Penyalahgunaan otorisasi: Serangan CSRF dapat dimanfaatkan untuk melakukan tindakan atas nama pengguna yang sudah login, seperti mengirim pesan atau menghapus data penting, karena server menganggap permintaan tersebut berasal dari pengguna yang sah. Dengan adanya csrf_token, server dan aplikasi dapat memverifikasi bahwa setiap permintaan POST, PUT, atau DELETE berasal dari sumber yang valid, yaitu halaman aplikasi yang dikontrol oleh server tersebut, sehingga serangan CSRF dapat dicegah.
 
-10. Penjelasan checklist tugas 3
+10. Penjelasan Checklist 3
+
    - Membuat input form untuk menambahkan objek model pada app sebelumnya.
-![ss1](create_forms.png)
+
+![create_forms](create_forms.png)
+
    - Menambahkan fungsi views
-![ss2](create_show.png)
+
+![create_show](create_show.png)
+
    - Membuat routing URL
-![ss3](routing_url.png)
+
+![routing_url](routing_url.png)
+
+11. Postman
+
+![postman](postman.png)
+
+13. Perbedaan antara HttpResponseRedirect() dan redirect()
+
+   HttpResponseRedirect() adalah class dalam Django yang digunakan untuk mengarahkan pengguna ke URL lain. Bertujuan untuk mengembalikan objek respons HTTP dengan status kode 302, yang mengindikasikan bahwa URL tujuan telah dialihkan sementara. URL harus dimasukkan secara eksplisit sebagai argumen untuk menentukan tujuan pengalihan.
+   redirect() adalah fungsi bantu (helper function) Django yang menyederhanakan penggunaan pengalihan (redirect). Fungsi ini bertujuan untuk memasukkan URL, nama view, atau bahkan objek model, dan Django secara otomatis menangani proses pengalihan ke tujuan yang sesuai. Di belakang layar, redirect() menggunakan HttpResponseRedirect tetapi lebih mudah digunakan dan fleksibel.
+
+14. Cara Menghubungkan Model Product dengan User dalam Django
+ 
+   Penggunaan ForeignKey: Untuk menghubungkan model Product dengan User, kita menggunakan ForeignKey. Ini adalah hubungan satu-ke-banyak (one-to-many), artinya satu pengguna (User) dapat memiliki banyak produk (Product), tetapi satu produk hanya bisa dimiliki oleh satu pengguna. Hubungan ini diimplementasikan dengan menambahkan field owner = models.ForeignKey(User, on_delete=models.CASCADE) di model Product.
+
+on_delete=models.CASCADE: Parameter on_delete=models.CASCADE berarti jika pengguna dihapus, maka semua produk yang terkait dengan pengguna tersebut juga akan dihapus dari database.
+
+15. Perbedaan antara Authentication dan Authorization
+
+   Authentication (Autentikasi) adalah proses memverifikasi identitas pengguna. Ini biasanya dilakukan saat pengguna memasukkan kredensial, seperti username dan password. Django mengimplementasikan autentikasi melalui sistem otentikasi bawaan, yang meliputi model pengguna (User) dan middleware yang memeriksa sesi pengguna.
+
+   Authorization (Otorisasi) adalah proses menentukan hak akses pengguna setelah identitas mereka terverifikasi. Setelah pengguna berhasil login, Django menggunakan otorisasi untuk menentukan sumber daya atau tindakan apa yang diizinkan untuk pengguna tersebut, misalnya apakah mereka dapat mengakses halaman admin atau melakukan perubahan pada data tertentu.
+
+16. Bagaimana Django Mengingat Pengguna yang Telah Login?
+
+   Django mengingat pengguna yang telah login menggunakan session framework. Setelah pengguna berhasil login, Django menyimpan informasi sesi dalam cookie di browser pengguna. Django menggunakan session ID yang disimpan dalam cookie ini untuk mengenali pengguna yang sama di setiap permintaan berikutnya. Cookies digunakan untuk menyimpan data kecil yang dikirim dari server ke klien. Selain digunakan untuk sesi login, cookies juga bisa digunakan untuk menyimpan preferensi pengguna, data pelacakan, atau status aplikasi.
+
+17. Penjelasan checklist 4
+
+- Implementasi fungsi registrasi, login, dan logout
+
+![user-login](user-login.png)
+
+- Dummy data di lokal
+
+![dummy1](dummy1.png)
+![dummy2](dummy2.png)
+
+- Menghubungkan User dengan Product dan menampilkan username pada user yang sedang logged in serta menampilkan last login menggunakan cookies
+
+![user-product](user-product.png)
 
