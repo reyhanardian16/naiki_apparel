@@ -1,8 +1,8 @@
-**Nama : Muhammad Reyhan Ardian
+Nama : Muhammad Reyhan Ardian
 
 NPM : 2306217185
 
-Kelas : PBP D**
+Kelas : PBP D
 
 1. Penjelasan Checklist 1
    
