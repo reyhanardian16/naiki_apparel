@@ -36,7 +36,7 @@ Kelas : PBP D
    - Response to Client
     Setelah template dirender, respons HTML dikirim kembali ke client untuk ditampilkan di browser.
 
-![bagan](output.png)
+![bagan](images/output.png)
 
 
 3. Git dalam pengembangan perangkat lunak
@@ -86,7 +86,7 @@ Kita membutuhkan method ini untuk memastikan bahwa data yang diterima dari pengg
 
    - Menambahkan fungsi views
 
-![create_show](create_show.png)
+![create_show](images/create_show.png)
 
    - Membuat routing URL
 
