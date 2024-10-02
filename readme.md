@@ -126,9 +126,28 @@ on_delete=models.CASCADE: Parameter on_delete=models.CASCADE berarti jika penggu
 - Dummy data di lokal
 
 ![dummy1](dummy1.png)
+
 ![dummy2](dummy2.png)
 
 - Menghubungkan User dengan Product dan menampilkan username pada user yang sedang logged in serta menampilkan last login menggunakan cookies
 
 ![user-product](user-product.png)
 
+18. Jika terdapat beberapa CSS selector untuk suatu elemen HTML, jelaskan urutan prioritas pengambilan CSS selector tersebut!
+
+   Urutan Prioritas Pengambilan CSS Selector mengikuti konsep specificity, di mana beberapa selector dapat diterapkan pada elemen yang sama. Urutan prioritasnya dimulai dari selector elemen HTML seperti p atau div, kemudian dilanjutkan dengan class selector yang dimulai dengan tanda titik (.), diikuti oleh attribute selector dan pseudo-class seperti [type="text"] atau :hover. Selanjutnya, ID selector (#id-name) memiliki prioritas lebih tinggi, disusul oleh inline CSS yang diterapkan langsung dalam elemen HTML. Yang terkuat adalah penggunaan !important dalam suatu aturan CSS, yang akan mengesampingkan semua aturan lainnya kecuali ada aturan lain yang juga menggunakan !important.
+
+19. Mengapa responsive design menjadi konsep yang penting dalam pengembangan aplikasi web? Berikan contoh aplikasi yang sudah dan belum menerapkan responsive design!
+
+   Responsive design adalah konsep penting dalam pengembangan aplikasi web karena memungkinkan situs web menyesuaikan tampilan berdasarkan ukuran perangkat yang digunakan, baik itu desktop, tablet, atau ponsel. Ini penting karena pengguna mengakses situs dari berbagai perangkat dengan ukuran layar yang berbeda, sehingga situs perlu memastikan pengalaman pengguna tetap optimal. Selain meningkatkan pengalaman pengguna, responsive design juga penting untuk SEO, karena mesin pencari seperti Google lebih memprioritaskan situs yang ramah mobile. Contoh aplikasi yang sudah menerapkan responsive design adalah Twitter, yang secara otomatis menyesuaikan tata letak dan ukuran berdasarkan perangkat yang digunakan. Di sisi lain, beberapa situs lama mungkin tidak responsive, sehingga tampilannya menjadi kacau ketika diakses melalui perangkat mobile.
+
+20. Jelaskan perbedaan antara margin, border, dan padding, serta cara untuk mengimplementasikan ketiga hal tersebut!
+
+   Margin, border, dan padding adalah konsep penting dalam pengaturan tata letak CSS. Margin adalah jarak luar yang memisahkan elemen dari elemen lain di sekitarnya, memberikan ruang di luar elemen. Border adalah garis yang mengelilingi elemen, memisahkan isi elemen dari elemen-elemen sekitarnya, dan dapat disesuaikan dengan ketebalan, warna, dan gaya. Padding adalah jarak antara konten elemen dengan border-nya, sehingga menambah ruang di dalam elemen tanpa mempengaruhi jarak ke elemen lain. Dengan memahami margin, border, dan padding, kita dapat mengontrol dengan presisi bagaimana elemen-elemen di halaman web berinteraksi satu sama lain dalam hal tata letak dan spasi.
+   
+21. Jelaskan konsep flex box dan grid layout beserta kegunaannya!
+
+    Flexbox dan grid layout adalah dua teknik layout modern yang sangat berguna untuk pengaturan tata letak di CSS. Flexbox adalah sistem layout satu dimensi yang memungkinkan elemen disusun baik secara horizontal maupun vertikal dalam satu baris atau kolom. Flexbox memberikan fleksibilitas tinggi dalam mendistribusikan ruang antar elemen, serta memudahkan untuk menyelaraskan elemen di sepanjang sumbu utama dan sumbu silang. Sebaliknya, grid layout adalah sistem layout dua dimensi yang memungkinkan pengaturan elemen dalam baris dan kolom secara bersamaan. Grid layout lebih cocok untuk struktur halaman yang lebih kompleks dengan berbagai area seperti header, sidebar, dan footer, memberikan kontrol lebih besar dalam mendefinisikan area layout secara eksplisit.
+
+24. Penjelasan Checklist 5
+- 
