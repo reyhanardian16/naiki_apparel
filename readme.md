@@ -152,8 +152,13 @@ horizontal maupun vertikal dalam satu baris atau kolom. Flexbox memberikan fleks
 
 24. Penjelasan Checklist 5
 - Menambah fungsi mengedit dan menghapus produk
+
 ![edit-delete](images/edit_delete_product.png)
+
 - Kustomisasi page utama dan navbar
+
 ![mainpage](images/main_page.png)
+
 - Kustomisasi card product
+
 ![product_card](images/card_product.png)
