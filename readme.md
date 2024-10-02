@@ -147,7 +147,13 @@ on_delete=models.CASCADE: Parameter on_delete=models.CASCADE berarti jika penggu
    
 21. Jelaskan konsep flex box dan grid layout beserta kegunaannya!
 
-    Flexbox dan grid layout adalah dua teknik layout modern yang sangat berguna untuk pengaturan tata letak di CSS. Flexbox adalah sistem layout satu dimensi yang memungkinkan elemen disusun baik secara horizontal maupun vertikal dalam satu baris atau kolom. Flexbox memberikan fleksibilitas tinggi dalam mendistribusikan ruang antar elemen, serta memudahkan untuk menyelaraskan elemen di sepanjang sumbu utama dan sumbu silang. Sebaliknya, grid layout adalah sistem layout dua dimensi yang memungkinkan pengaturan elemen dalam baris dan kolom secara bersamaan. Grid layout lebih cocok untuk struktur halaman yang lebih kompleks dengan berbagai area seperti header, sidebar, dan footer, memberikan kontrol lebih besar dalam mendefinisikan area layout secara eksplisit.
+    Flexbox dan grid layout adalah dua teknik layout modern yang sangat berguna untuk pengaturan tata letak di CSS. Flexbox adalah sistem layout satu dimensi yang memungkinkan elemen disusun baik secara
+horizontal maupun vertikal dalam satu baris atau kolom. Flexbox memberikan fleksibilitas tinggi dalam mendistribusikan ruang antar elemen, serta memudahkan untuk menyelaraskan elemen di sepanjang sumbu utama dan sumbu silang. Sebaliknya, grid layout adalah sistem layout dua dimensi yang memungkinkan pengaturan elemen dalam baris dan kolom secara bersamaan. Grid layout lebih cocok untuk struktur halaman yang lebih kompleks dengan berbagai area seperti header, sidebar, dan footer, memberikan kontrol lebih besar dalam mendefinisikan area layout secara eksplisit.
 
 24. Penjelasan Checklist 5
-- 
+- Menambah fungsi mengedit dan menghapus produk
+![edit-delete](images/edit_delete_product.png)
+- Kustomisasi page utama dan navbar
+![mainpage](images/main_page.png)
+- Kustomisasi card product
+![product_card](images/card_product.png)
