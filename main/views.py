@@ -15,12 +15,13 @@ from django.views.decorators.http import require_POST
 
 @login_required(login_url='/login')
 def show_main(request):
-
+    products = Product.objects.filter(user=request.user)
     context = {
         'npm' : '2306217185',
         'name': 'Muhammad Reyhan Ardian',
         'class': 'PBP D',
-        'last_login': request.COOKIES['last_login']
+        'last_login': request.COOKIES['last_login'],
+        'products': products,
     }
     return render(request, "main.html", context)
 
