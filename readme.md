@@ -82,7 +82,7 @@ Kita membutuhkan method ini untuk memastikan bahwa data yang diterima dari pengg
 
    - Membuat input form untuk menambahkan objek model pada app sebelumnya.
 
-![create_forms](create_forms.png)
+![create_forms](images/create_forms.png)
 
    - Menambahkan fungsi views
 
@@ -90,11 +90,11 @@ Kita membutuhkan method ini untuk memastikan bahwa data yang diterima dari pengg
 
    - Membuat routing URL
 
-![routing_url](routing_url.png)
+![routing_url](images/routing_url.png)
 
 11. Postman
 
-![postman](postman.png)
+![postman](images/postman.png)
 
 13. Perbedaan antara HttpResponseRedirect() dan redirect()
 
@@ -121,17 +121,17 @@ on_delete=models.CASCADE: Parameter on_delete=models.CASCADE berarti jika penggu
 
 - Implementasi fungsi registrasi, login, dan logout
 
-![user-login](user-login.png)
+![user-login](images/user-login.png)
 
 - Dummy data di lokal
 
-![dummy1](dummy1.png)
+![dummy1](images/dummy1.png)
 
-![dummy2](dummy2.png)
+![dummy2](images/dummy2.png)
 
 - Menghubungkan User dengan Product dan menampilkan username pada user yang sedang logged in serta menampilkan last login menggunakan cookies
 
-![user-product](user-product.png)
+![user-product](images/user-product.png)
 
 18. Jika terdapat beberapa CSS selector untuk suatu elemen HTML, jelaskan urutan prioritas pengambilan CSS selector tersebut!
 
@@ -147,7 +147,18 @@ on_delete=models.CASCADE: Parameter on_delete=models.CASCADE berarti jika penggu
    
 21. Jelaskan konsep flex box dan grid layout beserta kegunaannya!
 
-    Flexbox dan grid layout adalah dua teknik layout modern yang sangat berguna untuk pengaturan tata letak di CSS. Flexbox adalah sistem layout satu dimensi yang memungkinkan elemen disusun baik secara horizontal maupun vertikal dalam satu baris atau kolom. Flexbox memberikan fleksibilitas tinggi dalam mendistribusikan ruang antar elemen, serta memudahkan untuk menyelaraskan elemen di sepanjang sumbu utama dan sumbu silang. Sebaliknya, grid layout adalah sistem layout dua dimensi yang memungkinkan pengaturan elemen dalam baris dan kolom secara bersamaan. Grid layout lebih cocok untuk struktur halaman yang lebih kompleks dengan berbagai area seperti header, sidebar, dan footer, memberikan kontrol lebih besar dalam mendefinisikan area layout secara eksplisit.
+    Flexbox dan grid layout adalah dua teknik layout modern yang sangat berguna untuk pengaturan tata letak di CSS. Flexbox adalah sistem layout satu dimensi yang memungkinkan elemen disusun baik secara
+horizontal maupun vertikal dalam satu baris atau kolom. Flexbox memberikan fleksibilitas tinggi dalam mendistribusikan ruang antar elemen, serta memudahkan untuk menyelaraskan elemen di sepanjang sumbu utama dan sumbu silang. Sebaliknya, grid layout adalah sistem layout dua dimensi yang memungkinkan pengaturan elemen dalam baris dan kolom secara bersamaan. Grid layout lebih cocok untuk struktur halaman yang lebih kompleks dengan berbagai area seperti header, sidebar, dan footer, memberikan kontrol lebih besar dalam mendefinisikan area layout secara eksplisit.
 
 24. Penjelasan Checklist 5
-- 
+- Menambah fungsi mengedit dan menghapus produk
+
+![edit-delete](images/edit_delete_product.png)
+
+- Kustomisasi page utama dan navbar
+
+![mainpage](images/main_page.png)
+
+- Kustomisasi card product
+
+![product_card](images/card_product.png)
